@@ -1,0 +1,197 @@
+# =========================================================
+# Python
+# =========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# PyTest / coverage / caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.cover
+.cache/
+hypothesis/
+
+# =========================================================
+# Configuration and secrets
+# =========================================================
+# Never commit real credentials or DB settings.
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+secrets/
+config.local.*
+
+# =========================================================
+# Logs (FR-S4 writes to logs/expense_manager.log)
+# =========================================================
+logs/
+*.log
+*.log.*
+
+# =========================================================
+# Generated reports (Section 4.2: "reports/ ... not committed")
+# NOTE: docs/evidence/ IS committed (final reports belong there).
+# =========================================================
+reports/
+report/
+*-report/
+allure-results/
+allure-report/
+junit*.xml
+results.xml
+test-results.xml
+
+# =========================================================
+# Database files (SQLite) and dumps
+# =========================================================
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-shm
+*.db-wal
+*.sql.gz
+*.dump
+sqlite/*.db
+sqlite/*.sqlite*
+
+# Keep the schema and seed files (Section 12 deliverables)
+!sql/**/*.sql
+!sql/**/schema.sql
+!sql/validation/*.sql
+
+# =========================================================
+# Playwright (Python)
+# =========================================================
+.playwright/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+**/ui_playwright/**/screenshots/
+**/ui_playwright/**/traces/
+**/ui_playwright/**/videos/
+
+# =========================================================
+# Selenium (Python)
+# =========================================================
+**/ui_selenium/**/screenshots/
+**/ui_selenium/**/drivers/
+chromedriver
+geckodriver
+msedgedriver
+*.exe
+
+# =========================================================
+# Cypress / Node (Cypress module)
+# =========================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+.pnp.*
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+cypress/results/
+cypress/.cache/
+cypress.config.local.*
+
+# =========================================================
+# Cucumber-JVM / Maven (bdd/)
+# =========================================================
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+bdd/target/
+
+# =========================================================
+# Postman
+# =========================================================
+# Keep collection + env in repo (Section 12), but never commit
+# a local environment that might contain a live token.
+postman/*.local.*
+postman/*.postman_environment.local.json
+
+# =========================================================
+# IDEs and editors
+# =========================================================
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.settings/
+.project
+.classpath
+.factorypath
+*.swp
+*.swo
+*~
+
+# =========================================================
+# OS junk
+# =========================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =========================================================
+# Misc
+# =========================================================
+*.bak
+*.tmp
+*.orig
+*.rej
